@@ -316,6 +316,8 @@ class CAS_Client
         if ( empty($this->_server['base_url']) ) {
             if(!preg_match('/^http(s)?:\\/\\/.+/', $this->_getServerHostname())) {
                 $this->_server['base_url'] = 'https://' . $this->_getServerHostname();
+            } else {
+                $this->_server['base_url'] = $this->_getServerHostname();
             }
 //            $this->_server['base_url'] = 'https://' . $this->_getServerHostname();
             if ($this->_getServerPort()!=443) {
