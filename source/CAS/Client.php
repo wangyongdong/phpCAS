@@ -314,7 +314,10 @@ class CAS_Client
     {
         // the URL is build only when needed
         if ( empty($this->_server['base_url']) ) {
-            $this->_server['base_url'] = 'https://' . $this->_getServerHostname();
+            if(!preg_match('/^http(s)?:\\/\\/.+/', $this->_getServerHostname())) {
+                $this->_server['base_url'] = 'https://' . $this->_getServerHostname();
+            }
+//            $this->_server['base_url'] = 'https://' . $this->_getServerHostname();
             if ($this->_getServerPort()!=443) {
                 $this->_server['base_url'] .= ':'
                 .$this->_getServerPort();
@@ -2363,7 +2366,11 @@ class CAS_Client
         if ( empty($this->_callback_url) ) {
             $final_uri = '';
             // remove the ticket if present in the URL
-            $final_uri = 'https://';
+            if($this->_isHttps()) {
+                $final_uri = 'https://';
+            } else {
+                $final_uri = 'http://';
+            }
             $final_uri .= $this->_getClientUrl();
             $request_uri = $_SERVER['REQUEST_URI'];
             $request_uri = preg_replace('/\?.*$/', '', $request_uri);
