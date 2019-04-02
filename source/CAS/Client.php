@@ -314,6 +314,11 @@ class CAS_Client
     {
         // the URL is build only when needed
         if ( empty($this->_server['base_url']) ) {
+            /**
+             * Description:兼容http客户端地址
+             * Date:2018/9/26
+             * By:wangyongdong
+             */
             if(!preg_match('/^http(s)?:\\/\\/.+/', $this->_getServerHostname())) {
                 $this->_server['base_url'] = 'https://' . $this->_getServerHostname();
             } else {
@@ -2368,6 +2373,11 @@ class CAS_Client
         if ( empty($this->_callback_url) ) {
             $final_uri = '';
             // remove the ticket if present in the URL
+            /**
+             * Description:兼容http客户端地址
+             * Date:2018/9/26
+             * By:wangyongdong
+             */
             if($this->_isHttps()) {
                 $final_uri = 'https://';
             } else {
