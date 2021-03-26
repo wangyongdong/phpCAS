@@ -1,35 +1,8 @@
-phpCAS
-=======
+# phpCAS
 
-phpCAS is an authentication library that allows PHP applications to easily authenticate
-users via a Central Authentication Service (CAS) server.
+phpCAS 客户端，基于 [phpCAS](https://apereo.github.io/phpCAS/) 基础上进行修改，做为 [laravel-cas](http://git.kydev.net/medlive/pkg/laravel-cas) 的包
 
-Please see the wiki website for more information:
+# Updates
 
-https://apereo.github.io/phpCAS/
-
-Api documentation can be found here:
-
-https://apereo.github.io/phpCAS/api/
-
-
-[![Build Status](https://travis-ci.org/apereo/phpCAS.png)](https://travis-ci.org/apereo/phpCAS)
-
-LICENSE
--------
-
-Copyright 2007-2020, Apereo Foundation.
-This project includes software developed by Apereo Foundation.
-http://www.apereo.org/
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this software except in compliance with the License.
-You may obtain a copy of the License at:
-
-http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
+- 基于 [phpCAS](https://apereo.github.io/phpCAS/)，兼容 `http` 和 `https`的判断
+- 更新为最新版本 [phpCAS](https://apereo.github.io/phpCAS/)，解决 `phpCAS error: phpCAS::client(): ErrorException: "continue" targeting switch is equivalent to "break". Did you mean to use "continue 2"?` 问题
