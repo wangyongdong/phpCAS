@@ -1,8 +1,8 @@
 # phpCAS
 
-phpCAS ¿Í»§¶Ë£¬»ùÓÚ [phpCAS](https://apereo.github.io/phpCAS/) »ù´¡ÉÏ½øĞĞĞŞ¸Ä£¬×öÎª [laravel-cas](http://git.kydev.net/medlive/pkg/laravel-cas) µÄ°ü
+phpCAS å®¢æˆ·ç«¯ï¼ŒåŸºäº [phpCAS](https://apereo.github.io/phpCAS/) åŸºç¡€ä¸Šè¿›è¡Œä¿®æ”¹ï¼Œåšä¸º [laravel-cas](http://git.kydev.net/medlive/pkg/laravel-cas) çš„åŒ…
 
 # Updates
 
-- »ùÓÚ [phpCAS](https://apereo.github.io/phpCAS/)£¬¼æÈİ `http` ºÍ `https`µÄÅĞ¶Ï
-- ¸üĞÂÎª×îĞÂ°æ±¾ [phpCAS](https://apereo.github.io/phpCAS/)£¬½â¾ö `phpCAS error: phpCAS::client(): ErrorException: "continue" targeting switch is equivalent to "break". Did you mean to use "continue 2"?` ÎÊÌâ
+- åŸºäº [phpCAS](https://apereo.github.io/phpCAS/)ï¼Œå…¼å®¹ `http` å’Œ `https`çš„åˆ¤æ–­
+- æ›´æ–°ä¸ºæœ€æ–°ç‰ˆæœ¬ [phpCAS](https://apereo.github.io/phpCAS/)ï¼Œè§£å†³ `phpCAS error: phpCAS::client(): ErrorException: "continue" targeting switch is equivalent to "break". Did you mean to use "continue 2"?` é—®é¢˜
