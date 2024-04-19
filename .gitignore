@@ -9,3 +9,4 @@ utils/starting_HEAD
 composer.lock
 /vendor/
 /.buildpath
+/.idea
